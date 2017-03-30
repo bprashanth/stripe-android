@@ -32,5 +32,14 @@ public class LauncherActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button cardListButton = (Button) findViewById(R.id.btn_launch_card_list);
+        cardListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LauncherActivity.this, CardListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

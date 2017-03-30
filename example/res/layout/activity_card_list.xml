@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingStart="8dp"
+    android:paddingRight="8dp"
+    android:paddingEnd="8dp"
+    tools:context="com.stripe.example.activity.PollingActivity">
+
+    <TextView android:text="@string/addCardSource"
+              style="@style/Header.Light" />
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_widget_just_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
+
+    <Button
+        android:id="@+id/btn_make_card_source"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/addCardSource"/>
+
+    <TextView android:text="@string/updatedSources"
+              style="@style/Header.Light" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

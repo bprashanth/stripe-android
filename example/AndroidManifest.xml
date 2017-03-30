@@ -9,7 +9,6 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/appName">
-
         <activity
             android:name=".activity.PaymentActivity"
             android:theme="@style/SampleTheme">
@@ -26,7 +25,6 @@
             android:name=".activity.PollingActivity"
             android:launchMode="singleTask"
             android:theme="@style/SampleTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -37,7 +35,6 @@
                     android:host="async"
                     android:scheme="stripe"/>
             </intent-filter>
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -49,12 +46,22 @@
                     android:scheme="stripe"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LauncherActivity"
+
+        <activity
+            android:name=".activity.LauncherActivity"
             android:launchMode="singleTask"
             android:theme="@style/SampleTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.CardListActivity"
+            android:theme="@style/SampleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
         </activity>
     </application>

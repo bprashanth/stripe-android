@@ -2,5 +2,6 @@
 <resources>
     <string name="acc_label_card_number">"Kartennummer"</string>
     <string name="acc_label_expiry_date">"Gültig bis"</string>
+    <string name="card_ending_in">%1$s – %2$s</string>
     <string name="expiry_date_hint">MM/JJ</string>
 </resources>
